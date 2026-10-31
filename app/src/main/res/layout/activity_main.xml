@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="#10202F">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="דמות ההשראה שלי - פדרי"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/ivPerson"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="240dp"
         android:src="@drawable/img"
         android:scaleType="centerCrop"
-        android:contentDescription="תמונת רקע" />
+        android:contentDescription="תמונה של פדרי גונזלס" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvSubtitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="top|center_horizontal"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:text="למה בחרתי דווקא בו?"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
 
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="דמות השראה - פדרי גונזלס"
-            android:textSize="28sp"
-            android:textColor="#FFFFFF"
-            android:gravity="center"
-            android:layout_marginTop="24dp" />
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="16dp"
+        android:background="#20384C"
+        android:text="פדרי הוא שחקן כדורגל ספרדי המשחק בקבוצה ברצלונה , ועמדתו היא קשר.בנוסף ,  הוא בן 23 . בחרתי בפדרי כי הוא שחקן שמשקיע ומתמיד כדי להשתפר. אני מעריך את צורת המשחק שלו, את עבודת הצוות ואת הרצון שלו להצליח. הוא נותן לי השראה להמשיך להתאמץ ולא לוותר גם כשקשה."
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
 
-        <!-- כאן תוכל להוסיף מידע על השחקן -->
-
-        <TextView
-            android:id="@+id/tvInfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            android:text="כאן אפשר לכתוב מידע על פדרי..."
-            android:textSize="20sp"
-            android:textColor="#FFFFFF"
-            android:gravity="center" />
-
-        <Button
-            android:id="@+id/btnClick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="@string/click_here" />
-
-    </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>
